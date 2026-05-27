@@ -8,7 +8,7 @@ for /L %%i in (1,1,30) do (
     echo commit %%i>>file.txt
     git add .
     set /a DAY=!RANDOM! %% 28 + 1
-    git commit --date="2025-01-!DAY!T12:00:00" -m "commit %%i"
+    git commit --date="2026-05-!DAY!T12:00:00"
 )
 
 pause
